@@ -49,7 +49,7 @@ const loginUser = async (req, res) => {
             email: email.toLowerCase()
         });
 
-        if(!user) return res.status(400).json({
+        if(!user) return res.status(404).json({
             message: "User not found!"
         });
 
